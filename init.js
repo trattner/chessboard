@@ -1,3 +1,28 @@
+/*
+TO-DO:
+- game state structure
+- server + db logging
+- multiple instances / pages with routes (custom names) / save (route + password / create + visit tabs)
+- piece setup, erasing
+- game history up to 500, forward + back buttons
+- settings, resize page, board resize, colors
+- piece snapping to cursor center
+- game rules, highlighting
+- mini-games + comp levels
+- chess engine
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 // INITIAL SETTINGS
 var board_screen_percent = .9;
 var light_sq_color = "#ffe1bc";
