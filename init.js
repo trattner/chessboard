@@ -13,6 +13,35 @@ TO-DO:
 */
 
 
+/*
+var starting_piece_positions = {
+  'wk':['e1'],
+  'wq':['d1'],
+  'wr':['h1', 'a1'],
+  'wb':['c1','f1'],
+  'wn':['b1','g1'],
+  'wp':['a2','b2','c2','d2','e2','f2','g2','h2'],
+  'bk':['e8'],
+  'bq':['d8'],
+  'br':['h8','a8'],
+  'bn':['b8','g8'],
+  'bb':['c8','f8'],
+  'bp':['a7','b7','c7','d7','e7','f7','g7','h7']
+};
+*/
+
+var starting_piece_positions = {
+  'wb':['c1','f1'],
+  'br':['h8','a8']
+};
+
+
+
+
+
+
+
+
 
 
 
@@ -62,7 +91,7 @@ $(document).ready(function(){
   var s_sq = s_board / 8;
 
   //CREATE BOARD
-  board = document.createElement("div");
+  var board = document.createElement("div");
   board.id = "board";
   board.style.zIndex = 0;
   board.style.width = s_board;
@@ -130,20 +159,7 @@ $(document).ready(function(){
     'wp':"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chess_plt45.svg/1200px-Chess_plt45.svg.png"
   };
 
-  var starting_piece_positions = {
-    'wk':['e1'],
-    'wq':['d1'],
-    'wr':['h1', 'a1'],
-    'wb':['c1','f1'],
-    'wn':['b1','g1'],
-    'wp':['a2','b2','c2','d2','e2','f2','g2','h2'],
-    'bk':['e8'],
-    'bq':['d8'],
-    'br':['h8','a8'],
-    'bn':['b8','g8'],
-    'bb':['c8','f8'],
-    'bp':['a7','b7','c7','d7','e7','f7','g7','h7']
-  };
+
 
   for (piece in starting_piece_positions) {
     for (coord of starting_piece_positions[piece]){
